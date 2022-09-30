@@ -19,6 +19,7 @@ def setup_srun():
                     "jupyter lab",
                     "--no-browser",
                     "--port={port}"],
+        'timeout': 20,
         'launcher_entry': {
             'title': 'Slurm (GPU)',
             'icon_path': get_icon_path()
