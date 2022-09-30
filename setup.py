@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup(
     name="jupyter-slurm-proxy",
     version='0.0.1',
-    url="https://github.com/scrp-cuhk/jupyter-slurm-proxy",
+    url="https://github.com/ticoneva/jupyter-slurm-proxy",
     author="Vinci Chow",
     description="Jupyter extension to launch Jupyter on Slurm nodes",
     packages=setuptools.find_packages(),
