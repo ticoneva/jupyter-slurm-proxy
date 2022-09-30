@@ -12,11 +12,11 @@ def setup_srun():
     mem = "24G"
     
     server_process = {
-        'command': ["srun", 
-                    f"-c {cpu}",
-                    f"--mem={mem}",
+        'command': ["/usr/bin/srun", 
+                    "-c 4",
+                    "--mem 24G",
                     "--tunnel {port}:{port}",
-                    "jupyter lab",
+                    "/opt/network/anaconda3/bin/jupyter lab",
                     "--no-browser",
                     "--port={port}"],
         'timeout': 20,
