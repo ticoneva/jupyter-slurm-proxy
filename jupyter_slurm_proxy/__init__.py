@@ -13,7 +13,7 @@ def setup_srun():
         'command': ["srun", 
                     f"-c {cpu}",
                     f"--mem={mem}",
-                    "--tunnel {port}:{port}"
+                    "--tunnel {port}:{port}",
                     "jupyter lab",
                     "--no-browser",
                     "--port={port}"],
