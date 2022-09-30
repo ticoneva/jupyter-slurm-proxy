@@ -14,7 +14,7 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'rstudio = jupyter_slurm_proxy:setup_ssh'
+            'slurm = jupyter_slurm_proxy:setup_srun'
         ]
     },
     package_data={
